@@ -75,7 +75,7 @@ elif db == 'postgresql':
 else:
     raise("DB={0} not recognized".format(db))
 
-print "** Running benchmarks on {0} **".format(db)
+print ("** Running benchmarks on {0} **".format(db))
 
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
